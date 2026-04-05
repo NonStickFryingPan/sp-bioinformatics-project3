@@ -18,11 +18,7 @@
 
 ## Overview
 
-This repository documents a diploid genome assembly pipeline following the **Vertebrate Genomes Project (VGP)** methodology, implemented in Galaxy. The pipeline takes raw PacBio HiFi reads and produces chromosome-scale haplotype-resolved scaffolds using a combination of HiFi contig assembly, Bionano optical map scaffolding, and Hi-C chromatin contact scaffolding.
-
-The test organism is *Saccharomyces cerevisiae* S288C (haploid genome ~11.7 Mb), assembled as a synthetic diploid. This allows for high-confidence evaluation of assembly completeness and accuracy.
-
-**Analysis trajectory used: B** — HiFi + Hi-C (Hi-C phased contigging → Bionano scaffolding → Hi-C scaffolding)
+This repository documents a diploid genome assembly pipeline following the **Vertebrate Genomes Project (VGP)** methodology, implemented in Galaxy. The pipeline takes raw PacBio HiFi reads and produces chromosome-scale haplotype-resolved scaffolds using a combination of HiFi contig assembly, Bionano optical map scaffolding, and Hi-C chromatin contact scaffolding. The test organism is *Saccharomyces cerevisiae* S288C (haploid genome ~11.7 Mb).
 
 ---
 
