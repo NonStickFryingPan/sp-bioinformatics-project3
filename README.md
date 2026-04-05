@@ -319,18 +319,6 @@ Hi-C reads are re-mapped to the YaHS scaffolds and a new contact map is generate
 
 ## Assembly Statistics
  
-### Progression across pipeline stages (Hap1)
- 
-| Stage | # Sequences | Total Length | Largest Sequence | N50 | L50 | GC% |
-|-------|-------------|--------------|-----------------|-----|-----|-----|
-| Post-hifiasm (contigs) | 16 | ~11,300 kb | — | — | — | — |
-| Post-Bionano (scaffolds) | 17 | — | ~1,532 kb | — | — | — |
-| Post-YaHS (final scaffolds) | 17 | 12,161 kb | — | ~922 kb | 6 | 38.18 |
- 
-> Hap2 post-hifiasm: 17 contigs, ~12,200 kb total length.
- 
-### Final assembly vs. reference genome (*S. cerevisiae* S288C)
- 
 | Metric | Final Assembly | Reference Genome |
 |--------|---------------|-----------------|
 | Total sequence length | 12,161 kb | 12,157 kb |
