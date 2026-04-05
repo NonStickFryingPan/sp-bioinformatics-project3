@@ -318,20 +318,34 @@ Hi-C reads are re-mapped to the YaHS scaffolds and a new contact map is generate
 ---
 
 ## Assembly Statistics
-
-| Stage | Haplotype | # Sequences | Total Length | N50 |
-|-------|-----------|-------------|--------------|-----|
-| Post-hifiasm (contigs) | Hap1 | 16 | ~11.3 Mb | — |
-| Post-hifiasm (contigs) | Hap2 | 17 | ~12.2 Mb | — |
-| Post-Bionano (scaffolds) | Hap1 | see `Bionano stats` | — | — |
-| Post-YaHS (final scaffolds) | Hap1 | ~17 chromosomes | — | — |
-
-> Fill in exact values from your `gfastats` and `Bionano stats` outputs.
-
+ 
+### Progression across pipeline stages (Hap1)
+ 
+| Stage | # Sequences | Total Length | Largest Sequence | N50 | L50 | GC% |
+|-------|-------------|--------------|-----------------|-----|-----|-----|
+| Post-hifiasm (contigs) | 16 | ~11,300 kb | — | — | — | — |
+| Post-Bionano (scaffolds) | 17 | — | ~1,532 kb | — | — | — |
+| Post-YaHS (final scaffolds) | 17 | 12,161 kb | — | ~922 kb | 6 | 38.18 |
+ 
+> Hap2 post-hifiasm: 17 contigs, ~12,200 kb total length.
+ 
+### Final assembly vs. reference genome (*S. cerevisiae* S288C)
+ 
+| Metric | Final Assembly | Reference Genome |
+|--------|---------------|-----------------|
+| Total sequence length | 12,161 kb | 12,157 kb |
+| Scaffold count | 17 | 17 |
+| N50 | 922 kb | 924 kb |
+| N75 | 667 kb | 667 kb |
+| L50 | 6 | 6 |
+| GC% | 38.18 | 38.00 |
+ 
+The final assembly closely matches the reference genome across all key metrics, with scaffold count, N50, and L50 all in excellent agreement.
+ 
 ---
-
+ 
 ## Glossary
-
+ 
 | Term | Definition |
 |------|------------|
 | **Contig** | A gapless sequence inferred from overlapping reads |
@@ -341,15 +355,18 @@ Hi-C reads are re-mapped to the YaHS scaffolds and a new contact map is generate
 | **N50** | Length at which contigs ≥ this size cover 50% of the assembly |
 | **QV** | Phred-scaled quality value; QV50 = 1 error per 100,000 bp |
 | **BUSCO** | Completeness score based on conserved single-copy orthologs |
-
+ 
 ---
-
+ 
 ## References
-
+ 
 - Cheng et al. (2021). Haplotype-resolved de novo assembly using phased assembly graphs. *Nature Methods*
 - Rhie et al. (2020). Merqury: reference-free quality, completeness, and phasing assessment for genome assemblies. *Genome Biology*
 - Formenti et al. (2022). Gfastats: conversion, evaluation and manipulation of genome sequences. *Bioinformatics*
 - Simão et al. (2015). BUSCO: assessing genome assembly and annotation completeness. *Bioinformatics*
 - Ranallo-Benavidez et al. (2020). GenomeScope 2.0 and Smudgeplots. *Nature Communications*
+- Zhou et al. (2022). YaHS: yet another Hi-C scaffolding tool. *Bioinformatics*
+- Wenger et al. (2019). Accurate circular consensus long-read sequencing. *Nature Biotechnology*
+
 - Zhou et al. (2022). YaHS: yet another Hi-C scaffolding tool. *Bioinformatics*
 - Wenger et al. (2019). Accurate circular consensus long-read sequencing. *Nature Biotechnology*
