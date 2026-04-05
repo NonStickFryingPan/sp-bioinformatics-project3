@@ -313,8 +313,6 @@ Hi-C reads are re-mapped to the YaHS scaffolds and a new contact map is generate
 | PretextMap | `BAM Hi-C reads YaHS` | `PretextMap output YaHS` |
 | Pretext Snapshot | `PretextMap output YaHS` | Final contact map PNG |
 
-**Interpretation:** Comparing pre- and post-YaHS contact maps confirms correct contig orientation. Strong diagonal signal across 17 scaffolds (matching *S. cerevisiae* haploid chromosome count) with minimal off-diagonal noise indicates a high-quality final assembly.
-
 ---
 
 ## Assembly Statistics
