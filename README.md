@@ -313,8 +313,25 @@ Hi-C reads are re-mapped to the YaHS scaffolds and a new contact map is generate
 
 ## Assembly Statistics
  
-| Metric | Final Assembly | Reference Genome |
-|--------|---------------|-----------------|
+### Haplotype assemblies post-hifiasm (contig stage)
+ 
+| Metric | Hap1 | Hap2 |
+|--------|------|------|
+| # Contigs | 16 | 17 |
+| Total length | 11,305 kb | 12,161 kb |
+| Largest contig | 1,533 kb | 1,532 kb |
+| Smallest contig | 185 kb | 86 kb |
+| N50 | 922 kb | 923 kb |
+| NG50 | 813 kb | 923 kb |
+| L50 | 5 | 6 |
+| GC% | 38.35 | 38.18 |
+ 
+> No gaps at this stage — all sequences are pure contigs with zero gap sequence.
+ 
+### Final assembly vs. reference genome (*S. cerevisiae* S288C)
+ 
+| Metric | Final Assembly (Hap2) | Reference Genome |
+|--------|----------------------|-----------------|
 | Total sequence length | 12,161 kb | 12,157 kb |
 | Scaffold count | 17 | 17 |
 | N50 | 922 kb | 924 kb |
@@ -322,8 +339,8 @@ Hi-C reads are re-mapped to the YaHS scaffolds and a new contact map is generate
 | L50 | 6 | 6 |
 | GC% | 38.18 | 38.00 |
  
-The final assembly closely matches the reference genome across all key metrics, with scaffold count, N50, and L50 all in excellent agreement.
- 
+The final assembly closely matches the reference across all key metrics, confirming a near-complete chromosome-level reconstruction. 
+
 ---
  
 ## Glossary
